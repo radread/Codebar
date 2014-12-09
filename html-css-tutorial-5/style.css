@@ -1,0 +1,116 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	border-top: 10px solid #4c4066;
+	background: url('background-right.jpg') right top no-repeat,
+            	url('background-left.jpg') left no-repeat;
+    background-size: 420px auto, auto 900px;
+    background-attachment: fixed, fixed;
+}
+
+#wrapper {
+	width: 90%;
+	max-width: 1040px;
+	margin: 0 auto;
+	min-width: 900px;
+}
+
+h1 {
+	margin: 15px 0;
+	font-size: 85px;
+	color: #6f6c7c;
+	/* text-shadow: horizontal vertical blur color; */
+	text-shadow: 1px 1px 2px #72629a;
+}
+
+#left-bar {
+	width: 25%;
+	min-width: 200px;
+	display: inline-block;
+}
+
+#left-bar img {
+	width: 100%;
+}
+
+#container {
+	margin-left: 20px;
+	display: inline-block;
+	vertical-align: top;
+	width: 60%;
+}
+/*Can't just say inline-block and have the text appear next to the
+preceding element. Must adjust the width so it fits on the line */
+
+.frame {
+	padding: 5px 15px 15px;
+	background-color: white;
+	margin-bottom: 20px;
+	border: 1px solid #e5e5e5;
+	border-top: none;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.rounded img {
+	border-radius: 10px;
+}
+
+#left-bar .frame img {
+	border-top: 2px solid #e5e5e5;
+	border-bottom: 2px solid #e5e5e5;
+	padding: 7px 0;
+}
+
+.references {
+	margin-top: 30px;
+}
+
+a.btn {
+	display: inline-block;
+	vertical-align: top;
+	color: white;
+	padding: 18px 22px;
+	margin: 7px;
+	text-decoration: none;
+	background-color: #9a95d8;
+	border-radius: 5px;
+	/* box-shadow: horizontal-shadow vertical-shadow blur size color inset */
+	box-shadow: 3px 3px 6px #4e4c80;
+	background: -webkit-linear-gradient(top, #4e4c80 0%,#9a95d8 100%);
+}
+
+/* Make it look like a real button: inset the shadow and move the text
+left and down. As it's "inset" the y-axis inverts and you go anti-clockwise
+from the top. */
+
+a.btn:hover {
+	box-shadow: 3px 3px 6px #4e4c80 inset;
+	padding: 19px 21px 17px 23px;
+}
+
+p.about {
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+p:not(.about) {
+	line-height: 1.3em;
+}
+
+.achievements ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.achievements li {
+	padding: 8px 35px;
+	font-size: 0.8em;
+	font-weight: 300;
+}
+
+.achievements li:nth-child(odd) {
+	background-color: rgba(176, 175, 192, 0.2);
+}

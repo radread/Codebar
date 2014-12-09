@@ -1,0 +1,168 @@
+html {
+	display: block;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  line-height: 23px;
+}
+
+/* Change the colour of the header, 
+center the text, give it a border, tweak
+the padding and height */
+
+header {
+	background-color: #fdfdfc;
+	text-align: center;
+	border-bottom: 1px solid #e7e6e6;
+	/* Remember for border qualities: thickness,
+	style, colour */
+	padding-top: 14px;
+	height: 70px;
+}
+
+h1 {
+	display: block;
+	font-size: 2em;
+	-webkit-margin-before: 0.67em;
+	-webkit-margin-after: 0.67em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-weight: bold;
+}
+
+/* Make the picture and title display
+inline */
+.my-picture {
+	height: 60px;
+	display: inline-block;
+}
+
+.title {
+	display: inline-block;
+/* Because <h1> inside "title" is 
+block, you have to use "inline-block" 
+instead of "inline" */
+	margin: 20px;
+	vertical-align: top;
+/* as an inline-block element, 
+vertical-align: top will line up the
+top border of the elements; */
+}
+
+.sidebar {
+	/* Set colour, min and max widths */
+	background-color: #fdfdfd;
+	width: 30%;
+	/* Block level element tries 
+	to fill screen, be as wide as 
+	possible. Percentage sets width
+	relative to parent width. Useful for
+	responsive pages?*/
+	min-width: 300px;
+	max-width: 320px;
+	/* min and max sets conditions
+	on that percentage */
+	/* Set box properties */
+	display: inline-block;
+	padding: 25px 30px 20px;
+	/* Remember - top, right/left, 
+	bottom */
+	border: 1px solid #e8e8ea;
+	margin-top: 55px;
+	margin-left: 20px;
+	border-radius: 6px; /* rounds the corners of the box? */
+	box-shadow: 0 1px 1px 1px rgba(237, 235, 232, 0.4);
+}
+
+ul.social-media {
+	list-style: none;
+	margin-left: 10px;
+	padding-left: 20px;
+}
+
+.social-media li {
+	border-bottom: 1px solid #b0afc0;
+	padding: 10px;
+	width: 200px;
+}
+
+/* For pseudo classes on links always
+use the order:
+a:link
+a:visited
+a:hover
+a:active */
+
+.social-media li a {
+	color: #4c4066;
+	text-decoration: none;
+	text-shadow: 1px 0px #ffffff;
+	border-left: 7px solid #fdcc38;
+	padding-left: 10px;
+}
+.social-media li a:hover {
+	border-left-color: #a26cd2;
+}
+
+/* Align the sidebar heading */
+.sidebar b {
+	margin-left: 36px;
+	color: #4c4066;
+	font-size: 19px;
+}
+.main {
+	display: inline-block;
+	width: 55%;
+	margin-left: 70px;
+	padding-top: 60px;
+	vertical-align: top;
+}
+.highlight {
+	color: #4c61a9;
+}
+
+blockquote {
+	border: 1px solid #E7E6E6;
+	padding: 20px 27px;
+	border-radius: 6px;
+	background-color: #FDFDFC;
+	color: #4C4066;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.poem {
+	font-style: italic;
+	color: #4c4066;
+}
+.google-doodle {
+	text-align: center;
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+
+a {
+	color: #7a3cb7;
+}
+
+a:hover {
+	color: #a26cd2;
+}
+footer {
+	height: 60px;
+	padding-top: 20px;
+	padding-left: 30px;
+	background-color: #1f1430;
+	border-top: 1px solid #eeeeee;
+}
+
+footer p {
+	color: #b0afc0;
+	font-size: 14px;
+}
+
+footer a {
+	color: #b0afc0;
+}
