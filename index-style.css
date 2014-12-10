@@ -1,3 +1,6 @@
+
+/* Set defaults and put a black border at the top 
+of the page*/
 body {
 	font-family: Helvetica, Arial, sans-serif;
 	border-top: 5px solid black;
@@ -5,13 +8,26 @@ body {
 	margin: 15px;
 }
 
-/*header {
-	padding-top: 10px;
-}*/
+/* Position the container relative and make the height
+100% - this will allow us to push the footer to the
+bottom of the page when there's not a lot of content
+on the page. Set a min-height so the footer doesn't
+overlap the rest of the content*/
+.container {
+	position: relative;
+	height: 100%;
+	min-height: 400px;
+}
 
+/* Make a little space for the header */
 h1 {
 	padding-top: 4px;
 }
+
+/*Style lesson links so that it can be re-used 
+for all tutorial projects. Remove text-decorations
+and bullets, add a left border. CONSIDER: separately
+styling the practise project link (last-child?)*/
 
 .lesson-links h2 {
 	margin: 35px 40px 0;
@@ -22,6 +38,8 @@ h1 {
 	border-left: 3px solid black;
 	padding-left: 10px;
 }
+
+
 
 .lesson-links ul li {
 	list-style: none;
@@ -38,6 +56,21 @@ h1 {
 	text-decoration: underline;
 }
 
+.lesson-links aside {
+	float: right;
+}
+
+.lesson-links aside a {
+	text-decoration: none;
+	color: black;
+}
+
+.lesson-links aside a:hover {
+	text-decoration: underline;
+}
+
+/*Style the footer and position it absolute. Push it
+to the bottom of the page*/
 footer {
 	margin: 60px 0 5px;
 	border-top: 5px solid #5b2143;
@@ -46,10 +79,4 @@ footer {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-}
-
-.container {
-	position: relative;
-	height: 100%;
-	min-height: 400px;
 }
