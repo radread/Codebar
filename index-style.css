@@ -13,17 +13,27 @@ h1 {
 	padding-top: 4px;
 }
 
-ul {
-	padding: 50px 100px;
+.lesson-links h2 {
+	margin: 35px 40px 0;
 }
 
-ul li {
+.lesson-links ul {
+	margin: 20px 40px;
+	border-left: 3px solid black;
+	padding-left: 10px;
+}
+
+.lesson-links ul li {
 	list-style: none;
 	text-decoration: none;
 	padding: 3px;
 }
 
-ul li a {
+.lesson-links ul li a {
 	text-decoration: none;
 	color: black;
+}
+
+.lesson-links ul li a:hover {
+	text-decoration: underline;
 }
