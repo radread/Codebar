@@ -1,0 +1,29 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	border-top: 5px solid black;
+	color: black;
+	margin: 15px;
+}
+
+/*header {
+	padding-top: 10px;
+}*/
+
+h1 {
+	padding-top: 4px;
+}
+
+ul {
+	padding: 50px 100px;
+}
+
+ul li {
+	list-style: none;
+	text-decoration: none;
+	padding: 3px;
+}
+
+ul li a {
+	text-decoration: none;
+	color: black;
+}
