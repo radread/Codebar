@@ -37,6 +37,8 @@ styling the practise project link (last-child?)*/
 	margin: 20px 40px;
 	border-left: 3px solid black;
 	padding-left: 10px;
+	width: 30%;
+	float: left;
 }
 
 
@@ -58,6 +60,7 @@ styling the practise project link (last-child?)*/
 
 .lesson-links aside {
 	float: right;
+	width: 50%;
 }
 
 .lesson-links aside a {
