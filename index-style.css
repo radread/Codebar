@@ -63,7 +63,7 @@ styling the practise project link (last-child?)*/
 	display: inline-block;
 	vertical-align: top;
 	width: 40%;
-	margin: 30px 0 0 100px;
+	margin: 15px 0 0 80px;
 	font-size: 1.2em;
 }
 
@@ -71,6 +71,8 @@ styling the practise project link (last-child?)*/
 	text-decoration: none;
 	color: #166c88;
 	padding: 4px;
+	width: 60%;
+	margin: 0;
 }
 
 .owls a:hover {
@@ -82,8 +84,12 @@ styling the practise project link (last-child?)*/
 	margin: 0;
 }
 
-.owls img {
-	float: right;
+#owls-link {
+	display: inline-block;
+}
+
+#owls-image {
+	display: inline-block;
 }
 
 .second-link-line {
