@@ -62,8 +62,8 @@ styling the practise project link (last-child?)*/
 .owls {
 	display: inline-block;
 	vertical-align: top;
-	width: 30%;
-	margin: 30px 0 0 120px;
+	width: 40%;
+	margin: 30px 0 0 100px;
 	font-size: 1.2em;
 }
 
@@ -73,17 +73,21 @@ styling the practise project link (last-child?)*/
 	padding: 4px;
 }
 
+.owls a:hover {
+	text-decoration: underline;
+}
+
 .owls a p {
 	padding: 4px;
 	margin: 0;
 }
 
-.second-link-line {
-	text-indent: 40px;
+.owls img {
+	float: right;
 }
 
-.owls a:hover {
-	text-decoration: underline;
+.second-link-line {
+	text-indent: 40px;
 }
 
 /*Style the footer and position it absolute. Push it
