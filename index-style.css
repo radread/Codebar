@@ -37,3 +37,10 @@ h1 {
 .lesson-links ul li a:hover {
 	text-decoration: underline;
 }
+
+footer {
+	margin-top: 60px;
+	border-top: 5px solid #5b2143;
+	padding-top: 25px;
+	color: 808080;
+}

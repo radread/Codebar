@@ -1,0 +1,109 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: #120103;
+	color: #fef1f2;
+}
+
+header {
+	min-width: 700px;
+}
+
+blockquote {
+	text-indent: 30px;
+}
+
+.eyes img {
+	width: 100%;
+}
+/*
+.page-name {
+	font-size: 40pt;
+	bottom: 18%;
+	text-align: center;
+}*/
+
+h1 {
+	font-size: 50pt;
+	text-align: center;
+	padding-top: 0px;
+	color: #fef1f2;
+}
+
+.toolbar {
+	background-color: #800a12;
+	margin-top: 40px;
+	/*Ask about adjusting padding top and bottom*/
+	text-align: center;
+	z-index: 99;
+	min-width: 700px;
+}
+
+.links li {
+	list-style: none;
+	display: inline-block;
+	padding: 10px;
+	z-index: 99;
+}
+
+.links li a {
+	font-size: 18pt;
+	margin: 0 50px;
+	text-decoration: none;
+	color: #fef1f2;
+	padding: 4px 7px;
+	border: 1px solid #120103;
+	border-radius: 4px;
+	z-index: 98;
+}
+
+.links li a:hover {
+	border: 2px solid #fcd1d5;
+	margin: 0 49px;
+}
+
+.opener {
+	display: inline-block;
+}
+
+/* Make 2 lines to superimpose over the toolbar */
+/*.invisible {
+	height: 20px;
+	position: absolute;
+	top: 423px;
+	left: 455px;
+}
+
+.line {
+	width: 125px;
+	display: inline-block;
+	border-bottom: 2px solid #120103;*/
+}
+
+.spies-size {
+	display: inline-block;
+	width: 67px;
+}
+
+.tawny {
+	display: inline-block;
+	width: 35%;
+}
+
+.tawny img {
+	min-width: 400px;
+}
+
+.thoreau {
+	width: 55%;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 80px;
+	margin-left: 30px
+}
+
+.name {
+	text-align: right
+}
+
