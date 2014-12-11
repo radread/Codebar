@@ -29,6 +29,10 @@ for all tutorial projects. Remove text-decorations
 and bullets, add a left border. CONSIDER: separately
 styling the practise project link (last-child?)*/
 
+.lesson-links {
+	min-width: 500px;
+}
+
 .lesson-links h2 {
 	margin: 35px 40px 0;
 }
@@ -40,6 +44,7 @@ styling the practise project link (last-child?)*/
 	width: 30%;
 	display: inline-block;
 	vertical-align: top;
+	min-width: 300px;
 }
 
 
@@ -66,6 +71,7 @@ styling the practise project link (last-child?)*/
 	margin-top: 15px;
 	font-size: 1em;
 	position: relative;
+	min-width: 400px;
 }
 
 #owls-link {
