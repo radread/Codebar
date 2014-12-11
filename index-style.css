@@ -30,7 +30,8 @@ and bullets, add a left border. CONSIDER: separately
 styling the practise project link (last-child?)*/
 
 .lesson-links {
-	min-width: 500px;
+	min-width: 300px;
+	display: inline-block;
 }
 
 .lesson-links h2 {
@@ -46,8 +47,6 @@ styling the practise project link (last-child?)*/
 	vertical-align: top;
 	min-width: 300px;
 }
-
-
 
 .lesson-links ul li {
 	list-style: none;
@@ -68,7 +67,7 @@ styling the practise project link (last-child?)*/
 	display: inline-block;
 	vertical-align: top;
 	width: 40%;
-	margin-top: 15px;
+	margin-top: 80px;
 	font-size: 1em;
 	position: relative;
 	min-width: 400px;
