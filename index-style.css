@@ -63,7 +63,7 @@ styling the practise project link (last-child?)*/
 	text-decoration: underline;
 }
 
-.owls {
+#owls {
 	display: inline-block;
 	vertical-align: top;
 	width: 40%;
