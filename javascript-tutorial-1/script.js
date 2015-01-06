@@ -18,3 +18,15 @@ var nextYear = year + 1;
 
 console.log("We are in " + year + ", but " + nextYear + " is just around the corner!");
 
+//Write booleans
+var codebarIsAwesome = true;
+var weatherIsAmazing = false;
+
+console.log("Is Codebar AWESOME? " + codebarIsAwesome);
+console.log("Is the weather in London amazing? " + weatherIsAmazing);
+
+//create an undefined variable
+
+var iDontHaveAValue;
+
+console.log("What kind of variable am I? " + iDontHaveAValue);
