@@ -127,4 +127,24 @@ function whatIAmDoingToday(coach,place) {
 	console.log("Today, I am at " + place + " and I am learning a bit of JavaScript with the help of " + coach);
 }
 
+//Return values
+function addNumbers(x,y) {
+	return x + y;	
+}
+
+//Get to grips with the idea that variables declared within a function
+//only exist within that function
+
+var result;
+
+function subtractNumbers(x,y) {
+	result = x - y;
+}
+
+subtractNumbers(10,3);
+console.log(result);
+
+//The variable only needs to be DECLARED outside the function.
+//It can be DEFINED inside and have the function affect it outside.
+
 
