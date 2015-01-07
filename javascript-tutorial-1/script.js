@@ -122,4 +122,6 @@ function popupHello(name) {
 	alert("Hello " + name);
 }
 
-popupHello("Ellen");
+function whatIAmDoingToday(coach,place) {
+	console.log("Today, I am at " + place + " and I am learning a bit of JavaScript with the help of " + coach);
+}
