@@ -120,6 +120,7 @@ hello("Codebar");
 
 function popupHello(name) {
 	alert("Hello " + name);
+	return 10;
 }
 
 function whatIAmDoingToday(coach,place) {
