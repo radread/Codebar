@@ -110,3 +110,16 @@ if (people > pizzas) {
 else {
 	console.log("We have waaay too much pizza. That can never be bad!");
 }
+
+//Practice functions
+function hello(name) {
+	console.log("Hello " + name + "!");
+}
+
+hello("Codebar");
+
+function popupHello(name) {
+	alert("Hello " + name);
+}
+
+popupHello("Ellen");
