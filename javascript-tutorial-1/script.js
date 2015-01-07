@@ -79,3 +79,34 @@ var oranges = "oranges";
 if(apples === oranges) {
 	console.log("Apples and Oranges are the same thing!");
 }
+
+if(apples !== oranges) {
+	console.log("Apples are not oranges!");
+}
+
+//Set some variables and try more than and less than
+var coaches = 20;
+var students = 24;
+var pizzas = 50;
+
+var people = coaches + students;
+
+if (people > pizzas) {
+	console.log("We have more people than pizzas");
+}
+
+if (students > pizzas) {
+	console.log("But we have more students than pizzas");
+}
+
+if (coaches < students) {
+	console.log("We have less coaches than students");
+}
+
+if (people > pizzas) {
+	console.log("We have more people than pizzas. That's not very good");
+}
+
+else {
+	console.log("We have waaay too much pizza. That can never be bad!");
+}
