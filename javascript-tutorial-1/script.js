@@ -138,13 +138,11 @@ function addNumbers(x,y) {
 var result;
 
 function subtractNumbers(x,y) {
-	result = x - y;
+	var result = x - y;
 }
 
 subtractNumbers(10,3);
 console.log(result);
 
-//The variable only needs to be DECLARED outside the function.
-//It can be DEFINED inside and have the function affect it outside.
-
-
+//Declaring the variable both inside and outside the function
+//is called "Shadowing". Avoid it.
