@@ -30,3 +30,52 @@ console.log("Is the weather in London amazing? " + weatherIsAmazing);
 var iDontHaveAValue;
 
 console.log("What kind of variable am I? " + iDontHaveAValue);
+
+//section the next output
+
+console.log("Operations");
+
+//Try addition
+
+var x = 6;
+var y = 3;
+var addition = x + y;
+
+console.log("Addition: x + y = " + addition);
+
+//Try subtraction
+
+var subtraction = x - y;
+
+console.log("Subtraction: x - y = " + subtraction);
+
+//Try multiplication
+
+var multiplication = x * y;
+
+console.log("Multiplication: x * y = " + multiplication);
+
+//Try division
+
+var division = 6 / 3;
+
+console.log("Division: x / y = " + division);
+
+//Learn the if statement
+
+if (codebarIsAwesome) {
+	console.log("Codebar is AWESOME!");
+}
+
+if (!codebarIsAwesome) {
+	console.log("Codebar is not awesome at all :(!");
+}
+
+//Learn about strict equality
+
+var apples = "apples";
+var oranges = "oranges";
+
+if(apples === oranges) {
+	console.log("Apples and Oranges are the same thing!");
+}
