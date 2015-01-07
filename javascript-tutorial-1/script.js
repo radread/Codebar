@@ -138,11 +138,31 @@ function addNumbers(x,y) {
 var result;
 
 function subtractNumbers(x,y) {
-	var result = x - y;
+	result = x - y;
 }
 
 subtractNumbers(10,3);
 console.log(result);
 
-//Declaring the variable both inside and outside the function
-//is called "Shadowing". Avoid it.
+//You only have to DECLARE the variable outside the function.
+//Once you've done that you can use it inside.
+
+var myName = "Ellen";
+var faveColour = "Purple";
+var age = 27;
+var codebarSessions = 7
+var someInfo = "I am 27 years old and 155cm tall."
+
+function aboutMe(age,faveColour) {
+	return("I am " + age + " years old and my favourite colour is " + faveColour + ".");
+}
+
+console.log("Hi! My name is " + myName + ". A couple of things about me. " + aboutMe(27,"Purple") + " I have attended " + codebarSessions + " sessions so far.");
+
+if (codebarSessions === 0) {
+	console.log("This is my first Codebar session.");
+}
+
+else {
+	console.log("This is not my first time here.");
+}
