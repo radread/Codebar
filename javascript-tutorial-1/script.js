@@ -120,9 +120,11 @@ hello("Codebar");
 
 function popupHello(name) {
 	alert("Hello " + name);
-	return 10;
 }
 
+//Create a function with multiple arguments
 function whatIAmDoingToday(coach,place) {
 	console.log("Today, I am at " + place + " and I am learning a bit of JavaScript with the help of " + coach);
 }
+
+
