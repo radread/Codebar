@@ -57,3 +57,40 @@ console.log(animals);
 
 animals.sort()
 console.log(animals);
+
+//Try sorting on a new array
+
+var names = [ "Jane", "Barry", "Helen", "David", "Sam" ];
+
+names.sort();
+
+console.log(names);
+
+//NOTE: be aware that special characters and uppercase can mess 
+//with sorting. Sort can also be customised to sort things in
+//other ways
+
+function sortNumbersAscending(a, b) {
+	return a - b;
+}
+
+var nums = [ 1, 5, 3, 19, 2, 10 ];
+
+nums.sort(sortNumbersAscending);
+
+console.log(nums);
+
+animals.sort().reverse();
+
+// Sort numbers descending.
+
+console.log(animals);
+console.log(nums);
+
+function sortNumbersDescending(a,b) {
+	return b - a;
+}
+
+nums.sort(sortNumbersDescending);
+
+console.log(nums);
