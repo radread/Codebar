@@ -156,3 +156,29 @@ var london = {
 		this.population = newPopulation;
 	}
 };
+
+//Access the porperties by calling them with dot notation, 
+//as with any variable
+
+console.log("Population of London: "+ london.population);
+
+//Access a nested object
+
+console.log("The tallest building in London is the " + london.tallestBuilding.name + " with a height of " + london.tallestBuilding.height);
+
+//Use an array within a nested object
+
+var i;
+
+console.log("The Olympics took place in London in:\n");
+
+for (i = 0; i < london.olympics.length; i = i + 1) {
+	console.log(london.olympics[i]);
+}
+
+console.log("Population before update: " + london.population);
+london.updatePopulation(8400000);
+console.log("Population after update: " + london.population);
+
+//"This" in the method is used to acces the properties and methods
+//of objects from inside the object itself.
