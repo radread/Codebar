@@ -176,6 +176,7 @@ for (i = 0; i < london.olympics.length; i = i + 1) {
 	console.log(london.olympics[i]);
 }
 
+//Use a method to change a property
 console.log("Population before update: " + london.population);
 london.updatePopulation(8400000);
 console.log("Population after update: " + london.population);
