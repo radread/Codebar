@@ -94,3 +94,31 @@ function sortNumbersDescending(a,b) {
 nums.sort(sortNumbersDescending);
 
 console.log(nums);
+
+var fruitAndVeg = [ "apple", "orange", "banana", "kiwi", "avocado", "celery", "aubergine" ];
+var noAvocados = [];
+var i = 0;
+
+while (i < fruitAndVeg.length) {
+	if (fruitAndVeg[i] !== "avocado") {
+		noAvocados.push(fruitAndVeg[i]);
+	}
+
+	i = i + 1;
+}
+
+console.log(noAvocados);
+// This function goes down the array. Every time it comes across
+//an element that is NOT "avocado" it adds it to the array
+//"noAvocados". 
+
+var fruitAndVeg = [ "apple", "orange", "banana", "kiwi", "avocado", "celery", "aubergine" ];
+var noAvocados = [];
+
+for (var i = 0; i < fruitAndVeg.length; i = i + 1) {
+	if (fruitAndVeg[i] !== "avocado") {
+		noAvocados.push(fruitAndVeg[i]);
+	}
+}
+
+console.log(noAvocados);
