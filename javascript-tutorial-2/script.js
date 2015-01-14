@@ -112,6 +112,8 @@ console.log(noAvocados);
 //an element that is NOT "avocado" it adds it to the array
 //"noAvocados". 
 
+//A for loop is better though, because there's a counter
+
 var fruitAndVeg = [ "apple", "orange", "banana", "kiwi", "avocado", "celery", "aubergine" ];
 var noAvocados = [];
 
@@ -122,3 +124,35 @@ for (var i = 0; i < fruitAndVeg.length; i = i + 1) {
 }
 
 console.log(noAvocados);
+
+//What is an Object?
+
+//An Object is a container. You can use it to describe other objects
+//and functions. They have properties and methods.
+
+//Creating an object
+
+//var object = {
+//	propertyName: propertyValue
+//	propertyName: propertyValue
+//	methodName: function(){
+		//method definition
+//	},
+//	...
+//};
+
+var london = {
+	name: "London",
+	population: 8308369,
+	tallestBuilding: {
+		name: "Shard",
+		height: "310m"
+	},
+	numberOfUniversities: 43,
+	averageRent: 1106,
+	dailyTubePassengerJourney: 3500000,
+	olympics: [ 1908, 1948, 2012],
+	updatePopulation: function(newPopulation) {
+		this.population = newPopulation;
+	}
+};
