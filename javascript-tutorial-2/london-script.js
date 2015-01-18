@@ -81,9 +81,14 @@ function displayPopulation() {
 	document.body.appendChild(population);
 }
 
+//Create a function to display the tallest building name and height
 function displayTallestBuilding() {
 	var tallestBuilding = document.createElement("p");
-	var content = document.createTextNode("Name of tallest building: " + london.tallestBuilding.name + ", Height: " + london.tallestBuilding.height);
-	tallestBuilding.appendChild(content);
+	var content1 = document.createTextNode("Name of tallest building: " + london.tallestBuilding.name)
+	var content2 = document.createElement("br") 
+	var content3 = document.createTextNode("Height: " + london.tallestBuilding.height);
+	tallestBuilding.appendChild(content1);
+	tallestBuilding.appendChild(content2);
+	tallestBuilding.appendChild(content3);
 	document.body.appendChild(tallestBuilding);
 }
