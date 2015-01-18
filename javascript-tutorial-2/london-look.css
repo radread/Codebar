@@ -1,0 +1,16 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	color: #a60416;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #320107;
+}
