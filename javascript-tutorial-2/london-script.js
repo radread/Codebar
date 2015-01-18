@@ -58,7 +58,7 @@ var london = {
 	},
 	numberOfUniversities: 43,
 	averageRent: 1106,
-	dailytTubePassengerJourney:3500000,
+	dailytTubePassengerJourney: 3500000,
 	olympics: [ 1908, 1948, 2012],
 	updatePopulation: function(newPopulation) {
 		this.population = newPopulation;
@@ -101,10 +101,28 @@ function displayUniversities() {
 	universities.appendChild(content);
 	document.body.appendChild(universities);
 }
-
+//Show average rent - remember to figure out html escaping for £
 function displayAverageRent() {
 	var rent = document.createElement("p");
 	var content = document.createTextNode("Average monthly rent: £" + london.averageRent);
+	
 	rent.appendChild(content);
 	document.body.appendChild(rent);
+}
+
+//Show number of daily tube passengers
+function displayTubePassengers() {
+	var passengers = document.createElement("p");
+	var content = document.createTextNode("Number of passengers using the tube every day: " + london.dailytTubePassengerJourney);
+
+	passengers.appendChild(content);
+	document.body.appendChild(passengers);
+}
+
+function displayOlympicDates() {
+	var olympics = document.createElement("p");
+	var content = document.createTextNode("London hosted the summer Olympics in " + london.olympics[0] + ", " + london.olympics[1] + " and " + london.olympics[2]);
+
+	olympics.appendChild(content);
+	document.body.appendChild(olympics);
 }
