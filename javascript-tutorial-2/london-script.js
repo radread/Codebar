@@ -27,9 +27,10 @@ function listDomElements() {
 	console.log(description.innerHTML);
 }
 
+//What you did above:
 //Now add a link to trigger the function
 
-//An easier way to interact with the DOM
+//An easier way to interact with the DOM is to
 //Retrieve them using their tag
 
 //But this gets time consuming as you will
@@ -37,3 +38,52 @@ function listDomElements() {
 
 //Retrieve elements by id instead
 
+//Moving on:
+//Creating new elements
+//create an element:
+//	js document.createElement("<tagName>");
+//create text node:
+//	js document.createTextNode("<text>");
+//add children to element:
+//	js document.appendChild("<node>");
+
+//Try this with the London object
+
+var london = {
+	name: "London",
+	population: 8308369,
+	tallestBuilding: {
+		name: "Shard",
+		height: "310m"
+	},
+	numberOfUniversities: 43,
+	averageRent: 1106,
+	dailytTubePassengerJourney:3500000,
+	olympics: [ 1908, 1948, 2012],
+	updatePopulation: function(newPopulation) {
+		this.population = newPopulation;
+	}
+};
+
+function displayPopulation() {
+	//Make a new <p></p> for population
+	var population = document.createElement("p");
+
+	//Make some text content for <p></p>
+	var content = document.createTextNode("Population: " + london.population);
+
+	//Put the text content into the <p></p>
+	population.appendChild(content);
+
+	//Append the population to the body, and make it
+	//visible in the browser
+
+	document.body.appendChild(population);
+}
+
+function displayTallestBuilding() {
+	var tallestBuilding = document.createElement("p");
+	var content = document.createTextNode("Name of tallest building: " + london.tallestBuilding.name + ", Height: " + london.tallestBuilding.height);
+	tallestBuilding.appendChild(content);
+	document.body.appendChild(tallestBuilding);
+}
