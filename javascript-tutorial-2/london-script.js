@@ -84,6 +84,7 @@ function displayPopulation() {
 //Create a function to display the tallest building name and height
 function displayTallestBuilding() {
 	var tallestBuilding = document.createElement("p");
+	//Create 2 text nodes and 1 "br" element so name and height can appear on different lines
 	var content1 = document.createTextNode("Name of tallest building: " + london.tallestBuilding.name)
 	var content2 = document.createElement("br") 
 	var content3 = document.createTextNode("Height: " + london.tallestBuilding.height);
@@ -91,4 +92,19 @@ function displayTallestBuilding() {
 	tallestBuilding.appendChild(content2);
 	tallestBuilding.appendChild(content3);
 	document.body.appendChild(tallestBuilding);
+}
+
+function displayUniversities() {
+	var universities = document.createElement("p");
+	var content = document.createTextNode("Number of universities: " + london.numberOfUniversities);
+
+	universities.appendChild(content);
+	document.body.appendChild(universities);
+}
+
+function displayAverageRent() {
+	var rent = document.createElement("p");
+	var content = document.createTextNode("Average monthly rent: " + london.averageRent);
+	rent.appendChild(content);
+	document.body.appendChild(rent);
 }
