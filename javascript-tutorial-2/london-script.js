@@ -104,9 +104,7 @@ function displayUniversities() {
 
 function displayAverageRent() {
 	var rent = document.createElement("p");
-	var content1 = document.createTextNode("Average monthly rent: £" + london.averageRent);
-	rent.appendChild(content1);
-	rent.appendChild(content2);
-	rent.appendChild(content3);
+	var content = document.createTextNode("Average monthly rent: £" + london.averageRent);
+	rent.appendChild(content);
 	document.body.appendChild(rent);
 }
