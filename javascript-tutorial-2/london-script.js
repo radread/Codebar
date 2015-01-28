@@ -24,7 +24,8 @@ function listDomElements() {
 	document.getElementsByTagName("h1");
 
 	var description = document.getElementById("description");
-	console.log(description.innerHTML);
+	document.body.appendChild(description);
+	
 }
 
 //What you did above:
@@ -104,7 +105,7 @@ function displayUniversities() {
 //Show average rent - remember to figure out html escaping for £
 function displayAverageRent() {
 	var rent = document.createElement("p");
-	var content = document.createTextNode("Average monthly rent: £" + london.averageRent);
+	var content = document.createTextNode("Average monthly rent: " + '\u00A3'  + london.averageRent);
 	
 	rent.appendChild(content);
 	document.body.appendChild(rent);
@@ -125,4 +126,13 @@ function displayOlympicDates() {
 
 	olympics.appendChild(content);
 	document.body.appendChild(olympics);
+}
+
+function displayEverything() {
+	displayPopulation();
+	displayTallestBuilding();
+	displayUniversities();
+	displayAverageRent();
+	displayTubePassengers();
+	displayOlympicDates();
 }
