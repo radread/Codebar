@@ -12,5 +12,6 @@ $(document).ready(function() {
   //create an event listener that adds the text to the list
   $(document).on('click', '#add-to-list', function() {
   	addToList($('#item').val());
+  	$('#item').val("");
   });
 });
