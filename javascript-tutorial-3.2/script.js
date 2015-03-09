@@ -13,5 +13,6 @@ $(document).ready(function() {
   $(document).on('click', '#add-to-list', function() {
   	addToList($('#item').val());
   	$('#item').val("");
+  	$('#item').focus();
   });
 });
