@@ -3,7 +3,7 @@
 
 //create a function to add things to the wishlist
 function addToList(item) {
-	$("ol#items").append("<li>" + item + "</li>");
+	$("ol#items").append("<li>" + item + "<span class='label pending'>Pending</span></li>");
 }
 
 $(document).ready(function() {
@@ -15,4 +15,5 @@ $(document).ready(function() {
   	$('#item').val("");
   	$('#item').focus();
   });
+
 });
