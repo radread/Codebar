@@ -106,14 +106,14 @@ styling the practise project link (last-child?)*/
 	text-indent: 40px;
 }
 
-/*Style the footer and position it absolute. Push it
+/*COME BACK TO THIS LATER Style the footer and position it absolute. Push it
 to the bottom of the page*/
 footer {
 	margin: 60px 0 5px;
 	border-top: 5px solid #5b2143;
 	padding-top: 25px;
 	color: #808080;
-	position: absolute;
+	/*position: absolute;*/
 	bottom: 0;
 	width: 100%;
 }
