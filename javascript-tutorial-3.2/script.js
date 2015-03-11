@@ -15,5 +15,9 @@ $(document).ready(function() {
   	$('#item').val("");
   	$('#item').focus();
   });
-
+  $(document).on('click', '.label.pending', function() {
+  	$(this).parent().addClass('completed');
+  	$(this).parent().append('<span class="label success">Done!</span>');
+  	$(this).remove('.label.pending');
+  });
 });
