@@ -24,4 +24,8 @@ $(document).ready(function() {
 	$(document).on('click', '#add-to-favorite', function() {
 		addBox($('#color').val());
 	});
+	//Iterate through colors array and add them to the favorites
+	$.each(colors, function(index, element) {
+		addBox(element);
+	});
 });
