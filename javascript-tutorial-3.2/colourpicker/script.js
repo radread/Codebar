@@ -13,7 +13,7 @@ $(document).ready(function() {
 	$(document).on('keyup keydown keypress', '#color', function() {
 		setPreviewColor($('#color').val());
 	});
-	//$(document).on('click', '#add-to-favorite', function() {
-	//	$('#colors').append("<div class='item' style 'background-color: " + color + ";'></div>")
-	//});
+	$(document).on('click', '#add-to-favorite', function() {
+		addBox($('#color').val());
+	});
 });
