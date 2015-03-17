@@ -1,6 +1,6 @@
 /* Exercise 2: Color picker */
 
-//Create an array of colors
+//Create an array of colors and a random selection from the array
 var colors = [ "22ac5e", "d68236", "9180e0", "0d4060", "e4eef7", "44300b", "ec118e", "20ebb6", "9f2f17", "081f03"];
 var randomColor = Math.floor( Math.random() * colors.length);
 //Show a preview of a given color
@@ -29,5 +29,6 @@ $(document).ready(function() {
 	$.each(colors, function(index, element) {
 		addBox(element);
 	});
-	addBox(colors[randomColor]);
+	//Add a random color from 'colors' to preview
+	setPreviewColor(colors[randomColor]);
 });
