@@ -24,6 +24,11 @@ $(document).ready(function() {
 	//on add favorite button
 	$(document).on('click', '#add-to-favorite', function() {
 		addBox($('#color').val());
+		//Remove the last favorite if more than 16
+		//are added
+		if($("#colors .item").length > 16) {
+			$("#colors .item:last-child").replaceWith("");
+		}
 	});
 	//Iterate through colors array and add them to the favorites
 	$.each(colors, function(index, element) {
