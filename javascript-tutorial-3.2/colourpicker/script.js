@@ -43,9 +43,12 @@ $(document).ready(function() {
 	//Add a random color from 'colors' to preview
 	setPreviewColor(colors[randomColor]);
 
-	//show a favorite in the preview box when the mouse
-	//hovers over it
+	// show a favorite in the preview box when the mouse
+	// hovers over it, then revert back on mouseleave
+	var originalPreviewColor = $('.preview').css('background-color');
 	$(document).on('mouseenter', '#colors .item', function() {
 		setPreviewColor($(this).css('background-color'));
-	});
+		}).on('mouseleave', '#colors .item', function() {
+			setPreviewColor(originalPreviewColor);
+		});
 });
