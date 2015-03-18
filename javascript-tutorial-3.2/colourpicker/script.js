@@ -42,9 +42,8 @@ $(document).ready(function() {
 		if($("#colors .item").length > 16) {
 			$("#colors .item:last-child").replaceWith("");
 		}
-	// //Set preview color back to original
-		setPreviewColor(originalPreviewColor);
-	// set focus back to text field
+
+	// set focus back to text field and empty preview box
 		$('#color').val("");
 		$('#color').focus();
 	});
@@ -55,6 +54,11 @@ $(document).ready(function() {
 	$(document).on('mouseenter', '#colors .item', function() {
 		setPreviewColor($(this).css('background-color'));
 		}).on('mouseleave', '#colors .item', function() {
-			setPreviewColor(originalPreviewColor);
+			if ($('#color').val() === "") {
+				setPreviewColor(originalPreviewColor);
+			}
+			else {
+				setPreviewColor($('#color').val());
+			}
 		});
 });
