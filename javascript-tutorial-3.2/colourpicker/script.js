@@ -20,6 +20,7 @@ $(document).ready(function() {
 	$(document).on('keyup keydown keypress', '#color', function() {
 		setPreviewColor($('#color').val());
 	});
+
 	//Add color in text field to favorites grid when user clicks
 	//on add favorite button
 	$(document).on('click', '#add-to-favorite', function() {
@@ -29,11 +30,22 @@ $(document).ready(function() {
 		if($("#colors .item").length > 16) {
 			$("#colors .item:last-child").replaceWith("");
 		}
+		//set focus back to text field
+		$('#color').val("");
+		$('#color').focus();
 	});
+
 	//Iterate through colors array and add them to the favorites
 	$.each(colors, function(index, element) {
 		addBox(element);
 	});
+
 	//Add a random color from 'colors' to preview
 	setPreviewColor(colors[randomColor]);
+
+	//show a favorite in the preview box when the mouse
+	//hovers over it
+	$(document).on('mouseenter', '#colors .item', function() {
+		setPreviewColor($(this).css('background-color'));
+	});
 });
