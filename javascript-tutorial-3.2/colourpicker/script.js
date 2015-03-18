@@ -22,7 +22,7 @@ $(document).ready(function() {
 // Add a random color from 'colors' to preview
 	setPreviewColor(colors[randomColor]);
 
-// Have a few favorites already showing
+// Have a few favorites already showing -
 // Iterate through colors array and add them to the favorites
 	$.each(colors, function(index, element) {
 		addBox(element);
@@ -42,6 +42,8 @@ $(document).ready(function() {
 		if($("#colors .item").length > 16) {
 			$("#colors .item:last-child").replaceWith("");
 		}
+	// //Set preview color back to original
+		setPreviewColor(originalPreviewColor);
 	// set focus back to text field
 		$('#color').val("");
 		$('#color').focus();
