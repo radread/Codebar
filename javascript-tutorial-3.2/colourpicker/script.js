@@ -24,7 +24,7 @@ $(document).ready(function() {
 
 // Have a few favorites already showing -
 // Iterate through colors array and add them to the favorites
-	$.each(colors, function(index, element) {
+	$.each(colors, function(element) {
 		addBox(element);
 	});
 
@@ -36,7 +36,7 @@ $(document).ready(function() {
 	});
 
 // Add color from text field to favorites grid when user clicks add favorite
-	$(document).on('click', '#add-to-favorite', function() {
+	$(document).on('click enter', '#add-to-favorite', function() {
 		addBox($('#color').val());
 	// Remove the last favorite if more than 16 are added
 		if($("#colors .item").length > 16) {
@@ -46,6 +46,7 @@ $(document).ready(function() {
 	// set focus back to text field and empty preview box
 		$('#color').val("");
 		$('#color').focus();
+		setPreviewColor(originalPreviewColor);
 	});
 
 	// show a favorite in the preview box when the mouse
@@ -62,5 +63,3 @@ $(document).ready(function() {
 			}
 		});
 });
-
-//I am at codebar
