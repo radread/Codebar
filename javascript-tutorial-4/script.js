@@ -3,11 +3,15 @@
 function getGithubInfo(username) {
 	var response = new XMLHttpRequest();
 	// console.log(username);
-	response.open("GET", "https://api.github.com/users/" + username, false);
+	response.open("GET", "https://api.github.com/users/" + username, true);
 	// console.log(response);
-	response.send();
-	console.log(response);
-	return response;
+	// response.send();
+	// console.log(response);
+	response.onreadystatechange=function() {
+		if (response.readyState==4 && response.status==200) {
+			return response;
+		}
+	}
 }
 
 
@@ -28,7 +32,8 @@ $(document).ready(function() {
 	$(document).on('keypress', '#username', function(e) {
 		if (e.which === 13) {
 			var person = getGithubInfo($('#username').val());
-			showUser(person);
+			console.log(person);
+			showUser(JSON.parse(person.responseText));
 		}
 	});
 });
