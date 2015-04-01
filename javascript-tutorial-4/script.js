@@ -2,8 +2,10 @@
 
 function getGithubInfo(username) {
 	var response = new XMLHttpRequest();
-	response.open("GET", "https://api.github.com/users/" + username, false);
-
+	console.log(username);
+	response.open("GET", "https://api.github.com/users/" + username, true);
+	response.send();
+	// console.log(response);
 	return response;
 
 }
