@@ -10,8 +10,10 @@ function getGithubInfo(username) {
 	response.onreadystatechange=function() {
 		if (response.readyState==4 && response.status==200) {
 			return response;
+			showUser(JSON.parse(response.responseText));
 		}
 	}
+
 }
 
 
